@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ stock_id }}</title>
+</head>
+<body>
+    {% if table %}
+        {{ graph|safe }}
+    {% else %}
+    <p>No graph was provided</p>
+    {% endif %}
+</body>
+</html>
